@@ -1,0 +1,26 @@
+{
+    "fig1.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Ilustración clara de arquitectura NTN: múltiples satélites LEO en órbita mostrados como círculos pequeños conectados por líneas de enlace inter-satellite (ISL), enlaces feeder hacia estaciones terrestres (gateway), user links hacia dispositivos móviles y áreas de cobertura con beams hexagonales adaptativos. Incluir segmento terrestre con torres base conectadas. Vista lateral y superior combinada para claridad, líneas de flecha indicando movilidad y handovers, estilo IEEE técnico limpio."
+    },
+    "fig2.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Gráfico de barras y línea combinado mostrando evolución temporal de publicaciones (eje X: años 2018 a 2025, eje Y: número de publicaciones). Barras azules para total NTN resource optimization, línea gris con marcadores para artículos usando AI/ML/DRL. Título y ejes sin texto dentro de la imagen, estilo limpio IEEE, leyendas indicadas mediante formas geométricas simples y flechas minimalistas."
+    },
+    "fig3.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Escenario de simulación NTN: vista superior con Tierra curva simplificada, 6 satélites LEO como puntos azules en órbitas circulares con flechas de movimiento, beams hexagonales adaptativos en diferentes colores hacia áreas de usuarios terrestres distribuidos (puntos grises de diferentes tamaños según demanda). Incluir gateways terrestres, líneas punteadas para interferencia co-canal, trayectorias orbitales curvas y etiquetas geométricas minimalistas para componentes clave. Estilo técnico IEEE limpio y claro."
+    },
+    "fig4.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama completo del framework: rectángulos y bloques conectados por flechas. Módulo central 'Agentes DRL Multi-Satélite', conectado a 'LAM Guía' (arriba), 'Predictor LSTM Canal' (izquierda), y 'Entorno NTN' (abajo con satélites, usuarios y beams). Incluir bucles de feedback, reward shaping, observación de estado y acciones (potencia, bandwidth, beamforming). Flujo horizontal y vertical claro con componentes geométricos minimalistas, estilo técnico IEEE preciso y profesional."
+    },
+    "fig5.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Gráfico de líneas múltiples mostrando evolución temporal de throughput sum-rate (eje X: slots de tiempo 0-300, eje Y: throughput en Gbps). Cuatro líneas: Proposed LAM-DRL (azul cobalto gruesa), DRL Standard (gris), Heuristic PF (negro), otro baseline. Marcadores discretos en puntos clave, estilo limpio IEEE con líneas sólidas y punteadas."
+    },
+    "fig6.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Gráfico CDF (Cumulative Distribution Function) de SINR (eje X: SINR en dB de -10 a 30, eje Y: CDF de 0 a 1). Cuatro curvas escalonadas o suaves: Proposed (azul cobalto), DRL Standard (gris), Heuristic (negro), Park baseline. Estilo técnico vectorial preciso, líneas gruesas diferenciadas."
+    },
+    "fig7.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama de barras agrupadas comparando complejidad computacional (eje Y: GFLOPs o tiempo relativo). Categorías: Heurística, DRL Estándar, LAM-DRL Propuesto. Barras para entrenamiento (azul) e inferencia (gris). Estilo técnico IEEE limpio, con patrones de relleno sutiles para diferenciar componentes."
+    },
+    "fig_conclusiones.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama resumen conceptual: iconos minimalistas de satélites LEO, usuarios terrestres, flechas de mejora en throughput (flecha azul ascendente), reducción de interferencia (escudo gris) y fairness (balanza). Elementos conectados en un flujo circular que representa el framework completo, estilo IEEE técnico limpio y abstracto."
+    }
+}

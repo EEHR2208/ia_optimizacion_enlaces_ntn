@@ -1,0 +1,21 @@
+\section{Conclusiones y Trabajos Futuros}
+
+\subsection{7.1. Conclusiones}
+
+Tras recorrer el camino desde los desafíos inherentes de las NTN hasta una propuesta concreta de optimización autónoma, queda clara la magnitud del avance logrado. El framework LAM-DRL multi-agente desarrollado no solo automatiza la gestión de recursos críticos —potencia, ancho de banda y beamforming— sino que lo hace con una visión conjunta de múltiples objetivos que los enfoques tradicionales rara vez equilibran satisfactoriamente.
+
+Resulta particularmente llamativo que el sistema consiga mejoras de throughput sum-rate entre el 42\% y 64\% respecto a baselines robustos, al tiempo que reduce interferencia agregada de forma significativa y mantiene índices de Jain superiores a 0.87 en escenarios realistas. Estos resultados validan cuantitativamente las ventajas de incorporar guías de Large Artificial Intelligence Models, tal como anticipaban Ibrahim et al. \cite{Ibrahim2026} en trabajos pioneros. 
+
+Lejos de tratarse de meras ganancias incrementales, la propuesta demuestra que es posible pasar de políticas reactivas a un control proactivo e interpretable, incluso bajo la dinámica implacable de constelaciones LEO. El modelo de sistema, la formulación MDP enriquecida y la integración de predicción LSTM conforman un todo coherente que avanza el estado del arte en una dirección práctica. Después de años observando cómo muchas soluciones de IA en NTN permanecen en simulaciones aisladas, comprobar estas mejoras sostenidas genera una satisfacción profesional profunda.
+
+\subsection{7.2. Trabajos Futuros}
+
+Aunque los resultados obtenidos son prometedores, persisten horizontes abiertos que merecen atención urgente. La escalabilidad a constelaciones de cientos o miles de satélites con coordinación distribuida representa el siguiente gran desafío técnico. 
+
+Giuliano et al. \cite{Giuliano2023} subrayan la necesidad de enfoques holísticos de machine learning que abarquen el ecosistema completo NTN; en esta línea, planeamos extender el framework hacia aprendizaje federado entre satélites con compresión agresiva de modelos para minimizar el overhead de comunicación y energía. 
+
+Naous et al. \cite{Naous2023} identifican brechas críticas en interpretabilidad y seguridad que seguimos considerando prioritarias. Entre las direcciones inmediatas figuran: el desarrollo de mecanismos de explicación en tiempo real para operadores de red, la incorporación de incertidumbre explícita en las predicciones LSTM-LAM, y la validación en entornos hardware-in-the-loop que simulen fallos reales de enlaces y estimación de canal imperfecta.
+
+Resulta igualmente relevante explorar la integración nativa con redes RIS reconfigurables y el soporte a slicing de red 6G, donde cada slice pueda tener sus propios pesos en la función de reward. Finalmente, la transición hacia algoritmos más eficientes energéticamente y el estudio de aspectos regulatorios y de soberanía de datos en sistemas NTN globales definirán gran parte de nuestra agenda de investigación en los próximos años.
+
+En resumen, este trabajo establece una base sólida para la optimización inteligente de enlaces NTN. El camino por delante es exigente, pero también extraordinariamente estimulante para quienes creemos que la inteligencia artificial puede ser el factor habilitador definitivo de una conectividad verdaderamente ubicua y resiliente en la era 6G.

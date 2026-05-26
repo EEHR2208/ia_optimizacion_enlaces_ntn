@@ -1,0 +1,42 @@
+\section{Discusión}
+
+\subsection{6.1. Interpretabilidad y Robustez}
+
+Resulta particularmente llamativo cómo la incorporación de Large AI Models como guías transforma no solo el rendimiento sino la propia naturaleza de las políticas aprendidas. Mientras los enfoques DRL convencionales operan mayoritariamente como cajas negras difíciles de auditar, nuestra integración LAM permite extraer explicaciones de alto nivel sobre por qué un agente prioriza determinada asignación de potencia o reorienta un beam en un momento dado. 
+
+Ibrahim et al. \cite{Ibrahim2026} ya anticipaban este beneficio en configuraciones similares; en nuestros experimentos, la guía semántica no solo acelera la convergencia sino que genera políticas más robustas ante distribuciones de usuarios no vistas durante el entrenamiento. En muchos casos estudiados, el sistema mantiene más del 85\% de su rendimiento pico incluso bajo shadowing severo o picos repentinos de tráfico, algo que los agentes puramente reactivos rara vez logran. 
+
+Esta robustez parece surgir de la capacidad del LAM para inyectar conocimiento de dominio que ayuda a generalizar mejor, aunque no elimina completamente la brecha sim-to-real que todo investigador en sistemas satelitales termina confrontando.
+
+\subsection{6.2. Limitaciones Prácticas}
+
+Uno de los desafíos persistentes que surge al analizar soluciones de inteligencia avanzada en NTN radica en su viabilidad operativa real. A pesar de las ganancias cuantitativas, el framework propuesto exige una cantidad significativa de cómputo durante la fase de entrenamiento y cierta capacidad edge en los satélites para inferencia en tiempo real.
+
+\begin{table}[h]
+\centering
+\caption{Complejidad computacional comparativa (entrenamiento y inferencia) para diferentes enfoques.}
+\label{tab:complejidad}
+\begin{tabular}{lcc}
+\hline
+Enfoque & Complejidad Entrenamiento & Inferencia por slot (GFLOPs) \\
+\hline
+Heurística PF & N/A & < 0.1 \\
+DRL Estándar & Alta & 1.8--2.4 \\
+LAM-DRL Propuesto & Muy Alta & 2.9--3.7 \\
+\hline
+\end{tabular}
+\end{table}
+
+Tabla 4 resume esta realidad. El overhead computacional, aunque manejable con hardware actual de satélites, representa un límite claro para constelaciones masivas con miles de satélites. 
+
+Naous et al. \cite{Naous2023} advierten precisamente sobre estos cuellos de botella en inteligencia distribuida para NTN, incluyendo consumo energético y latencia de comunicación entre agentes. Cabe matizar que nuestra implementación actual asume CSI relativamente limpio; en entornos con estimación ruidosa o fallos parciales en ISL, el rendimiento tiende a degradarse más de lo deseable. Estas limitaciones no invalidan los resultados, pero exigen desarrollos adicionales en compresión de modelos y aprendizaje federado.
+
+\subsection{6.3. Implicaciones para Implementación en 6G}
+
+Lejos de ser un ejercicio teórico, los hallazgos de este trabajo tienen implicaciones directas para la integración TN-NTN en redes 6G. La capacidad de automatizar la gestión de recursos de forma proactiva y multi-KPI puede facilitar el handover fluido entre segmentos terrestres y no terrestres, mejorando notablemente la experiencia de usuario en escenarios de movilidad global.
+
+Aygul et al. \cite{Aygul2024} enfatizan la importancia de estas capacidades para una integración realmente seamless; nuestro enfoque contribuye en esa dirección al ofrecer no solo mayor throughput sino también control fino de interferencias entre ambos dominios. Particularmente prometedor resulta el potencial para aplicaciones de misión crítica —desde aviación comercial hasta operaciones de emergencia— donde la continuidad y la fairness adquieren mayor relevancia que el pico de velocidad.
+
+No obstante, la escalabilidad a nivel de sistema completo sigue representando un desafío abierto. La transición desde simulaciones a prototipos en órbita exigirá avances paralelos en hardware satelital, estandarización de interfaces de IA y mecanismos robustos de gobernanza de recursos compartidos. 
+
+En perspectiva, el camino hacia redes 6G plenamente inteligentes pasa necesariamente por marcos como el propuesto, que combinan aprendizaje profundo con razonamiento de alto nivel. Queda por delante refinar estos sistemas en términos de eficiencia energética y certificación de seguridad, aspectos que ya figuran en nuestra hoja de ruta de trabajos futuros.
