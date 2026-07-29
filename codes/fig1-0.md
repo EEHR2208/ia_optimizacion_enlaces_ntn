@@ -1,0 +1,15 @@
+```text
+Diagrama técnico vectorial 2D, esquema de ingeniería de telecomunicaciones bajo estándar IEEE, diseño plano, minimalista, fondo blanco puro. Paleta de colores restringida: azul cobalto (#0047AB) para datos y enlaces, gris técnico (#4A4A4A) para infraestructura estructural, negro para texto. El diagrama está dividido verticalmente en dos planos interconectados:
+1. Plano Superior (Capa Lógica de IA): Un bloque centralizado etiquetado claramente como "LAM (Large AI Model) - High-Level Guidance". Flechas vectoriales sólidas apuntan hacia abajo desde este bloque hacia múltiples sub-bloques etiquetados como "MADRL Agents" (Multi-Agent Deep Reinforcement Learning). 
+2. Plano Inferior (Capa Física TN-NTN): Muestra dos satélites LEO en órbita representados como iconos vectoriales limpios, etiquetados como "LEO Satellite 1" y "LEO Satellite 2", conectados entre sí por una línea azul discontinua etiquetada como "ISL (Inter-Satellite Link)". Debajo de ellos, una estación terrena etiquetada como "Gateway" y una torre de telefonía etiquetada como "gNB (Terrestrial TN)". Los satélites proyectan haces hexagonales hacia la tierra etiquetados como "Adaptive Beams". Flechas curvas indican el movimiento orbital y el proceso de "Handover".
+Líneas de retroalimentación en bucle cerrado conectan la capa física con los agentes MADRL, etiquetadas con texto limpio: "Action: Power, BW & Beamforming" (hacia abajo) y "State: Proactive Channel Metrics & Throughput" (hacia arriba). Tipografía sans-serif limpia, líneas nítidas, sin degradados, sin sombras, alta legibilidad científica.
+
+```
+
+```text
+2D technical vector diagram, aerospace and telecommunications engineering schematic, strict IEEE standard layout, flat design, minimalist, pure white background. Controlled color palette: cobalt blue (#0047AB) for data and communication links, technical gray (#4A4A4A) for structural infrastructure, crisp black for typography. The diagram is vertically divided into two interconnected operational planes:
+1. Upper Plane (AI Logic Layer): A centralized control block clearly labeled "LAM (Large AI Model) - High-Level Guidance". Solid vector arrows point downwards from this block into multiple sub-blocks labeled "MADRL Agents" (Multi-Agent Deep Reinforcement Learning).
+2. Lower Plane (Physical TN-NTN Layer): Displays two LEO satellites in orbit represented as clean vector icons, labeled "LEO Satellite 1" and "LEO Satellite 2", interconnected by a dashed blue line labeled "ISL (Inter-Satellite Link)". Below them, a ground station labeled "Gateway" and a cellular tower labeled "gNB (Terrestrial TN)". The satellites project hexagonal cell footprints onto the ground labeled "Adaptive Beams". Curved motion arrows denote orbital velocity and the impending "Handover" process.
+Closed-loop feedback lines connect the physical layer back to the MADRL agents, explicitly labeled with clean sans-serif text: "Action: Power, BW & Beamforming" (downward flow) and "State: Proactive Channel Metrics & Throughput" (upward flow). Sharp lines, no gradients, no shadows, maximum scientific readability, high-quality technical blueprint style.
+
+```
