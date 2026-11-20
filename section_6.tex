@@ -12,18 +12,19 @@ Esta robustez parece surgir de la capacidad del LAM para inyectar conocimiento d
 
 Uno de los desafíos persistentes que surge al analizar soluciones de inteligencia avanzada en NTN radica en su viabilidad operativa real. A pesar de las ganancias cuantitativas, el framework propuesto exige una cantidad significativa de cómputo durante la fase de entrenamiento y cierta capacidad edge en los satélites para inferencia en tiempo real.
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \centering
-\caption{Complejidad computacional comparativa (entrenamiento y inferencia) para diferentes enfoques.}
+\caption{Complejidad computacional comparativa (entrenamiento e inferencia) para los distintos enfoques.}
 \label{tab:complejidad}
-\begin{tabular}{lcc}
-\hline
-Enfoque & Complejidad Entrenamiento & Inferencia por slot (GFLOPs) \\
-\hline
-Heurística PF & N/A & < 0.1 \\
-DRL Estándar & Alta & 1.8--2.4 \\
-LAM-DRL Propuesto & Muy Alta & 2.9--3.7 \\
-\hline
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{} l >{\centering\arraybackslash}p{2.45cm} >{\centering\arraybackslash}p{2.55cm} @{}}
+\toprule
+\textbf{Enfoque} & \textbf{Entrenamiento} & \textbf{Inferencia / slot (GFLOPs)} \\
+\midrule
+Heurística PF & N/A & $< 0.1$ \\
+DRL Estándar & Alta & $1.8\text{--}2.4$ \\
+LAM-DRL Propuesto & Muy alta & $2.9\text{--}3.7$ \\
+\bottomrule
 \end{tabular}
 \end{table}
 
